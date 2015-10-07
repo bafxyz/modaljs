@@ -1,0 +1,76 @@
+$bg-color = #fff
+$border-color = #263545
+$primary-color = #494c4c
+$secondary-color = #e34f4f
+$separator-color = #c4cacc
+
+.Modal
+  box-sizing border-box
+  color $primary-color
+  left center
+  max-width 420px
+  padding-left 10px
+  padding-right 10px
+  top center
+  width 100%
+
+  &-inner
+    background-color $bg-color
+    border-color $border-color
+    border-radius 5px
+    box-shadow 0 2px 4px rgba(#000, .5)
+
+  &.is-active
+    display block
+    margin 0 auto
+
+  &-btn
+    background-color $bg-color
+    border 0
+    padding 0
+
+  &-btn--close
+    background-color #fff
+    background-image url('./icon-cross.png')
+    background-position 100% 50%
+    background-repeat no-repeat
+    color #abb3b3
+    height 20px
+    margin-top -10px
+    position absolute
+    right 30px
+    top 50%
+    width 20px
+
+    &:hover
+      background-position 90% 60%
+
+  &-btn--cancel
+    border-radius 0 0 0 3px
+    border-right 1px solid $separator-color
+    float left
+
+  &-btn--submit
+    border-radius 0 0 3px 0
+    float right
+
+  &-header
+    border-bottom 1px solid $separator-color
+    padding 30px 25px
+    position relative
+
+  &-main
+    padding 30px 25px
+
+  &-footer
+    border-top 1px solid $separator-color
+    box-sizing border-box
+    overflow hidden
+    text-align center
+
+    .Modal-btn
+      width 50%
+      min-height 60px
+
+      &:hover
+        color $secondary-color

@@ -1,0 +1,48 @@
+// import mixins
+@import 'mixins/fonts'
+@import 'mixins/resolutions'
+
+// import stuff
+@import 'prepare/normalize'
+
+html,
+body
+  height 100%
+
+body
+  background-color #ccc
+  color #fff
+  font-family sans-serif
+  font-size 16px
+
+button
+  outline 0
+
+.o-layout
+  box-sizing border-box
+  margin 0 auto
+  max-width 1024px
+  min-height 100%
+  padding 30px
+
+.c-modal-container
+  padding-left 10px
+  padding-right 10px
+
+.c-modal-btn
+  background-color #eee
+  border 1px solid #999
+  color #444
+  display inline-block
+  font-weight bold
+  line-height 1.4
+  margin-right 10px
+  outline 0
+  padding 5px 8px
+  white-space nowrap
+
+  &:hover
+    background-color #ccc
+
+// apply media queries
+apply_media_cache()

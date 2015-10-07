@@ -1,0 +1,39 @@
+{
+  "name": "modaljs",
+  "version": "0.0.1",
+  "description": "Simple modal javascript dialog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development webpack-dev-server --progress",
+    "build": "rm -rf dist/* && NODE_ENV=production webpack -p --colors"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.25",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.19.0",
+    "eslint": "^1.6.0",
+    "eslint-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "html-webpack-plugin": "^1.6.1",
+    "json-loader": "^0.5.3",
+    "lodash": "^3.10.1",
+    "manifest-revision-webpack-plugin": "0.0.5",
+    "normalize-styl": "^3.0.3",
+    "path": "^0.12.7",
+    "postcss-center": "^1.0.0",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.12.4",
+    "stylus-loader": "^1.3.1",
+    "svg-inline-loader": "^0.3.0",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
+  },
+  "author": "Andrei Bunulu <bunulu@gmail.com>",
+  "license": "MIT",
+  "dependencies": {}
+}
